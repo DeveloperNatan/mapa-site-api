@@ -5,7 +5,7 @@ Crie um arquivo .env na raiz do projeto e defina as seguintes variáveis:
 String de conexão com o banco de dados
 DATABASE_URL="postgresql://USUARIO:SENHA@HOST:PORTA/NOME_DO_BANCO?schema=public"
 
-#Porta em que a aplicação irá rodar
+Porta em que a aplicação irá rodar
 PORT=3000
 
 2. Instalar Dependências
