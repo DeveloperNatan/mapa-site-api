@@ -14,9 +14,9 @@ npm install
 
 4. Sincronizar Banco de Dados
 Execute os seguintes comandos na ordem:
-npx prisma db pull
-npx prisma migrate deploy
-npx prisma generate
+- npx prisma db pull
+- npx prisma migrate deploy
+- npx prisma generate
 
 4. Aplicar Triggers
 Execute o script SQL localizado em data/trigger.sql diretamente no banco de dados. Via query tool.
