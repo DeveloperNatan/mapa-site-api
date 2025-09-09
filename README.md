@@ -10,7 +10,7 @@ PORT=3000
 
 2. Instalar Dependências
 Execute o comando:
-npm install
+- npm install
 
 4. Sincronizar Banco de Dados
 Execute os seguintes comandos na ordem:
@@ -22,4 +22,5 @@ Execute os seguintes comandos na ordem:
 Execute o script SQL localizado em data/trigger.sql diretamente no banco de dados. Via query tool.
 
 5. Iniciar a Aplicação
-Execute o comando: npm start
+Execute o comando:
+- npm start
