@@ -1,0 +1,25 @@
+Guia de Implantação (Deploy) do Projeto
+1. Configurar Variáveis de Ambiente
+Crie um arquivo .env na raiz do projeto e defina as seguintes variáveis:
+
+# String de conexão com o banco de dados
+DATABASE_URL="postgresql://USUARIO:SENHA@HOST:PORTA/NOME_DO_BANCO?schema=public"
+
+# Porta em que a aplicação irá rodar
+PORT=3000
+
+2. Instalar Dependências
+Execute o comando:
+npm install
+
+4. Sincronizar Banco de Dados
+Execute os seguintes comandos na ordem:
+npx prisma db pull
+npx prisma migrate deploy
+npx prisma generate
+
+4. Aplicar Triggers
+Execute o script SQL localizado em data/trigger.sql diretamente no banco de dados. Via query tool.
+
+5. Iniciar a Aplicação
+Execute o comando: npm start
