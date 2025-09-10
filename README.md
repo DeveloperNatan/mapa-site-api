@@ -14,6 +14,7 @@ Execute o comando:
 
 4. Sincronizar Banco de Dados
 Execute os seguintes comandos na ordem:
+- npx prisma migrate status
 - npx prisma db pull
 - npx prisma migrate deploy
 - npx prisma generate
