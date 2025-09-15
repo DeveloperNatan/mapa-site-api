@@ -16,11 +16,10 @@ END IF;
 RETURN NEW;
 END;
 
-$$
+
 LANGUAGE plpgsql;
 
 CREATE TRIGGER trigger_historico
 AFTER UPDATE ON "RelacionamentoPA"
 FOR EACH ROW
 EXECUTE FUNCTION criar_historico();
-$$
