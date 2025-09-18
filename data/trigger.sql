@@ -42,16 +42,12 @@ $$ LANGUAGE plpgsql;
 -- apos criar function
 
 DROP TRIGGER IF EXISTS trigger_historico ON "RelacionamentoPA";
-=======
 
 LANGUAGE plpgsql;
->>>>>>> 8da9207226cf950b11a32a0882d0235358e3e7b6
+
 
 CREATE TRIGGER trigger_historico
 AFTER INSERT OR UPDATE ON "RelacionamentoPA"
 FOR EACH ROW
 EXECUTE FUNCTION criar_historico();
-<<<<<<< HEAD
 
-=======
->>>>>>> 8da9207226cf950b11a32a0882d0235358e3e7b6
